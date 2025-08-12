@@ -1,3 +1,5 @@
+# Script de instalação das features do IIS necessários para execução do WES
+
 # Verifica a versão do Windows Server
 $osInfo = Get-CimInstance Win32_OperatingSystem
 $version = [System.Version]$osInfo.Version
@@ -83,3 +85,4 @@ try {
     Write-Error "Erro durante a instalação: $_"
     exit 1
 }
+
