@@ -1,3 +1,5 @@
+REM --- Script para execucao de copia de arquivos através do robocopy ---
+
 @echo off
 setlocal EnableExtensions
 
@@ -35,3 +37,4 @@ if %RC% GEQ 8 (
   echo Robocopy concluido com SUCESSO. Codigo: %RC%
   exit /b 0
 )
+
